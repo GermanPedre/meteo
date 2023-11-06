@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bariloche Celestial Details</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="seasons.css"/>
+    <script src="seasons.js"></script>
+    <style>
+#celestial_widget th {
+  font-weight: normal;
+  text-align: right;
+}
+#celestial_widget .widget_title {
+  margin-bottom: 25px;
+}
+#celestial_widget .label {
+  font-size: 100%;
+}
+#celestial_widget .data {
+  font-size: 100%;
+}
+    </style>
+  </head>
+
+  <body>
+
+
+<div id="title_bar">
+  <div id="title">
+    <h1 class="page_title">Bariloche</h1>
+    <p class="lastupdate">01/07/23 19:45:00</p>
+  </div>
+  <div id="rss_link"><a href="rss.xml">RSS</a></div>
+  <div id="reports">
+    Monthly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2022-09">2022-09</option>
+      <option value="2022-10">2022-10</option>
+      <option value="2022-11">2022-11</option>
+      <option value="2022-12">2022-12</option>
+      <option value="2023-01">2023-01</option>
+      <option selected>- Select Month -</option>
+    </select>
+    <br/>
+    Yearly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option selected>- Select Year -</option>
+    </select>
+    <br/>
+  </div>
+</div>
+    
+    <div id="contents">
+      <p><a href="index.html">&#10096; Current Conditions</a></p>
+
+      <div id="widget_group">
+
+
+<div id="celestial_widget" class="widget">
+  <div class="widget_title">
+    Celestial
+  </div>
+  <div class="widget_contents">
+    <p>Install <em>pyephem</em> for detailed celestial timings.</p>
+  </div>
+</div>
+      </div>
+
+
+<div id='identifier_widget' class="widget">
+  <div class="widget_title">
+  </div>
+  <div class="widget_contents">
+  <table>
+    <tr>
+      <td class="label">Latitude</td>
+      <td class="data">00&deg; 00.00' N</td>
+    </tr>
+    <tr>
+      <td class="label">Longitude</td>
+      <td class="data">000&deg; 00.00' E</td>
+    </tr>
+    <tr>
+      <td class="label">Altitude</td>
+      <td class="data">800 meters</td>
+    </tr>
+    <tr>
+      <td class="label">WeeWX</td>
+      <td class="data">4.10.2</td>
+    </tr>
+  </table>
+  </div>
+
+</div>
+    </div>
+
+  </body>
+</html>

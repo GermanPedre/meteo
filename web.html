@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="$lang">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web - Meteo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://www.unrn.edu.ar/images/favicon/favicon-196x196.png" />
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/Meteonew.png" /> </a>
+    </div>
+
+    <div id="logo_uni">
+      <a href="https://www.unrn.edu.ar/home" target="_blank" rel="noopener noreferrer"><img src="images/UNRN.png" />
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li> <!-- Dirige al home, deja de tener clase Active -->
+        <li><a href="web.html" class="active">WEB</a></li>
+        <li><a href="proyecto.html">PROYECTO</a></li>
+        <li><a href="historial.html">HISTORIAL</a></li>
+        <!-- Redirige a Nosotros, clase Active para que deje en blanco el botón -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="Estacion1"> <!-- Aprovecho estilos creados para el index así mantengo apariencia -->
+      <div class="stats"> <!-- Aprovecho estilos creados para el index así mantengo apariencia -->
+        <div>
+          <div class="about_box"> <!-- Creo la clase about_box para editar propieades en la hoja de estilos -->
+
+            <p>La web Meteo fue desarrollada con el fin de brindar información extraída de estaciones meteorológicas a los usuarios en tiempo real.<br></p>
+            <p>El proceso constó de varias etapas que comprenden desde la discusión de formas de armar un dashboard, pasando por el aprendizaje de desarrollo web, hasta finalmente ejecutar el proyecto en esta web.<br></p>
+            <!-- <br> es la etiqueta abierta para poner un salto de linea-->
+            <p>El funcionamiento de la página es sencillamente acceder al apartado de "Inicio" para ver la información del clima en el cuadro, el cual está preparado para que sea relativamente fácil escalado a agregar más estaciones en el futuro.</p>
+            <!-- <br> es la etiqueta abierta para poner un salto de linea-->
+            <p>Quienes colaboraron en el desarrollo de la web son:</p>
+             <!-- Unordenated List para que no ponga viñetas con numeros -->
+              <ul><li>Pedernera, Nahuel - Estudiante - <b><i>Web, dashboard, server y logo</i></b></li>
+              <li>Pedre, Germán Pablo - Estudiante - <b><i>Web, dashboard, mobile y logo</i></b></li>
+              <!--<li>Bayona, Edisson - Estudiante - <b><i>Web y logo</i></b></li> -->
+              <li>Guozden, Tomán - Profesor - <b><i>Dashboard, server y armado de sensores</i></b></li>
+            </ul>
+              <!-- <div id="quitar_sangria"> -->
+            <p>El resto del proyecto <b>(armado de sensores, puesta a punto del servidor, instalación de estaciones,
+              etc.)</b>
+              fue llevado a cabo por: Juan Medrano, Daniel Pablos, Matias Jorquera, Gabriel Garcés, Gustavo Muñoz y Edisson Bayona.<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer_general"><a href="index.html"><img src="images/favicon-196x196.png" alt="iconfooter" id="iconfooter"></a>
+    <h3 id="footer__nosotros">METEO es un proyecto llevado a cabo por estudiantes y docentes de Ingeniería en
+      Telecomunicaciones de la Universidad Nacional de Rio Negro</h3>
+  </footer>
+</body>
+</html>

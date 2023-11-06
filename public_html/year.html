@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bariloche Yearly Weather Summary</title>
+    <link rel="stylesheet" type="text/css" href="weewx.css"/>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script type="text/javascript">
+      function openURL(urlname)
+      {
+        window.location=urlname;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="masthead">
+        <h1>Bariloche</h1>
+        <h2>Yearly Weather Summary</h2>
+          <h2>01/07/23 19:45:00</h2>
+      </div>
+
+      <div id="stats_group">
+
+        <div class="stats">
+          <div class="stats_header">
+            Calendar Year
+          </div>
+
+          <table>
+            <tbody>
+              <tr>
+                <td class="stats_label">
+                  High Temperature<br/>
+                  Low Temperature
+                </td>
+                <td class="stats_data">
+                  21.6&#176;C at 01/05/23 15:42:01<br/>
+                  3.2&#176;C at 01/02/23 08:02:53
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Heat Index
+                </td>
+                <td class="stats_data"> 
+                  20.8&#176;C at 01/05/23 15:42:01
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label"> 
+                  Low Wind Chill
+                </td>
+                <td class="stats_data"> 
+                  -3.2&#176;C at 01/02/23 03:47:07
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Humidity<br/>
+                  Low Humidity
+                </td>
+                <td class="stats_data">
+                  94% 01/02/23 12:38:34<br/>
+                  29% 01/06/23 00:13:27
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Dewpoint<br/>
+                  Low Dewpoint
+                </td>
+                <td class="stats_data">
+                  11.2&#176;C 01/04/23 13:40:16<br/>
+                  -2.2&#176;C 01/06/23 00:49:19
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Barometer<br/>
+                  Low Barometer
+                </td>
+                <td class="stats_data">
+                  1022.1 mbar at 01/01/23 10:55:00<br/>
+                  1011.0 mbar at 01/05/23 21:15:01
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  Rain Total
+                </td>
+                <td class="stats_data">
+                  0.05 cm
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label"> 
+                  High Rain Rate
+                </td>
+                <td class="stats_data">
+                  0.00 cm/h at 01/01/23 00:00:03
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Wind
+                </td>
+                <td class="stats_data">
+                  66 km/h from 214&#176; at 01/02/23 00:42:09
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  Average Wind
+                </td>
+                <td class="stats_data">
+                  10 km/h
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="stats_label">
+                  RMS Wind
+                </td>
+                <td class="stats_data">
+                  12 km/h
+                </td>
+              </tr>
+
+              <tr>
+                <td class="stats_label">
+                  Vector Average Speed<br/>
+                  Vector Average Direction
+                </td>
+                <td class="stats_data">
+                  1 km/h<br/>
+                  54&#176;
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label">
+                  High Inside Temperature<br/>
+                  Low Inside Temperature
+                </td>
+                <td class="stats_data">
+                  27.6&#176;C at 01/06/23 14:15:00<br/>
+                  16.8&#176;C at 01/02/23 04:26:57
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- End class "stats" -->
+
+        <p>&nbsp;</p>
+
+        <div class="stats">
+          <div class="stats_header">
+            Rain Year (1-Jan start)
+          </div>
+
+          <table>
+            <tbody>
+              <tr>
+                <td class="stats_label">
+                  Rain Year Total
+                </td>
+                <td class="stats_data">
+                  0.05 cm
+                </td>
+              </tr>
+              <tr>
+                <td class="stats_label"> 
+                  High Rain Rate
+                </td>
+                <td class="stats_data">
+                  0.00 cm/h at 01/01/23 00:00:03
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- End class "stats" -->
+
+      </div> <!-- End class "stats_group" -->
+
+      <div id="content">
+        
+        <div class="header">
+          <h3>Yearly Statistics and Plots</h3>
+        </div>
+        <div id="plots">
+          <img src="yeartempdew.png" alt="temperatures" />
+          <img src="yeartempchill.png" alt="heatchill" />
+          <img src="yearhumidity.png"  alt="outside humidity" />
+          <img src="yearhilow.png" alt="Daily highs and lows for the year" title="Daily highs and lows for the year"/>
+          <img src="yearrain.png" alt="rain" />
+          <img src="yearwind.png" alt="wind" />
+          <img src="yearbarometer.png" alt="barometer"/>
+          <img src="yearwinddir.png" alt="Hi Wind" />
+          <img src="yearinside.png" alt="Inside" />
+          <img src="yearwindvec.png" alt="Wind Vector" />
+        </div>
+      </div> <!-- End id "content" -->
+
+      <div id="navbar">
+        <input type="button" value=   Current    onclick="openURL('index.html')" />
+        <input type="button" value=    Week      onclick="openURL('week.html')" />
+        <input type="button" value=    Month     onclick="openURL('month.html')" />
+        <input type="button" value=    Year      onclick="openURL('year.html')" />
+      </div>
+    </div> <!-- End id "container" -->
+
+
+  </body>
+</html>

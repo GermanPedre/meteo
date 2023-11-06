@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Barometer in Bariloche</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div data-role="page" data-add-back-btn="true" data-theme="a">
+    <div data-role="header">
+      <h1>Barometer</h1>
+   </div>
+   <div data-role="content">
+     <h4>24h Barometer</h4>
+     <img src="../daybarometer.png"/>
+     <ul>
+       <li>Today's min: 1012.9 mbar at 01:16:01</li>
+       <li>Today's max: 1015.9 mbar at 17:27:01</li>
+     </ul>
+
+     <h4>7-day Barometer</h4>
+     <img src="../weekbarometer.png" />
+     <ul>
+       <li>This week's min: 1011.0 mbar at 21:15:01 (Thursday)</li>
+       <li>This week's max: 1022.1 mbar at 10:55:00 (Sunday)</li>
+     </ul>
+    </div>
+    <div data-role="footer">
+      <h4>WeeWX v4.10.2</h4>
+    </div>
+  </div>
+</body>

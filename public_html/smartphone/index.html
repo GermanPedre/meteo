@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Bariloche Current Weather Conditions</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <link rel="apple-touch-icon" href="icons/icon_iphone_x1.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/icon_ipad_x2.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/icon_iphone_x2.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/icon_ipad_x2.png" />
+  <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="custom.js"></script>
+  <script src="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div data-role="page" data-theme="a">
+    <div data-role="header">
+      <h1>Bariloche</h1>
+    </div>
+    <div data-role="content">
+
+      <ul data-role="listview" data-inset="true" data-divider-theme="c">
+	<li data-role="list-divider">Time: 01/07/23 19:45:00</li>
+        <li><a href="temp_outside.html">Outside Temperature: 16.2&#176;C [12.3&#176;C, 18.3&#176;C]</a></li>
+        <li><a href="rain.html">Rain Rate: 0.00 cm/h (0.00 cm)</a></li>
+	<li><a href="barometer.html">Barometer: 1015.7 mbar</a></li>
+	<li><a href="wind.html">Wind Speed: 7 km/h from 135&#176;</a></li>
+      </ul>
+
+      <ul data-role="listview" data-inset="true" data-divider-theme="b">
+        <li><a href="radar.html">Radar</a></li>
+        <li><a href="../index.html" rel="external">Big Page</a></li>
+      </ul>
+
+    </div>
+    <div data-role="footer">
+      <h4>WeeWX v4.10.2</h4>
+    </div>
+  </div> 
+</body>
+

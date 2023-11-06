@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bariloche Statistics</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="seasons.css"/>
+    <script src="seasons.js"></script>
+    <style>
+#statistics_widget th {
+  font-weight: normal;
+  text-align: right;
+}
+#statistics_widget .widget_title {
+  margin-bottom: 25px;
+}
+#statistics_widget .label {
+  font-size: 100%;
+}
+#statistics_widget .data {
+  text-align: right;
+  font-size: 100%;
+  padding-left: 50px;
+}
+#statistics_widget .units {
+  font-size: 100%;
+}
+#statistics_widget .timestamp {
+  color: var(--timestamp-color);
+}
+    </style>
+  </head>
+
+  <body>
+
+
+<div id="title_bar">
+  <div id="title">
+    <h1 class="page_title">Bariloche</h1>
+    <p class="lastupdate">01/07/23 19:45:00</p>
+  </div>
+  <div id="rss_link"><a href="rss.xml">RSS</a></div>
+  <div id="reports">
+    Monthly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2022-09">2022-09</option>
+      <option value="2022-10">2022-10</option>
+      <option value="2022-11">2022-11</option>
+      <option value="2022-12">2022-12</option>
+      <option value="2023-01">2023-01</option>
+      <option selected>- Select Month -</option>
+    </select>
+    <br/>
+    Yearly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option selected>- Select Year -</option>
+    </select>
+    <br/>
+  </div>
+</div>
+    
+    <div id="contents">
+      <p><a href="index.html">&#10096; Current Conditions</a></p>
+
+      <div id="widget_group">
+
+
+
+
+<div id="statistics_widget" class="widget">
+  <div class="widget_title">
+    Statistics
+  </div>
+  <div class="widget_contents">
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <th>Today</th>
+          <th class="hilo_week">Week</th>
+          <th class="hilo_month">Month</th>
+          <th class="hilo_year">Year</th>
+          <th class="hilo_rainyear">Rain Year</th>
+        </tr>
+
+        <tr>
+          <td class="label">Outside Temperature</td>
+          <td class="units">&#176;C</td>
+          <td class="data new_row">
+            18.3<br/>
+            <span class="timestamp">07:32:19</span><br/>
+            12.3<br/>
+            <span class="timestamp">02:14:53</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">15:42:01 (Thursday)</span><br/>
+            3.2<br/>
+            <span class="timestamp">08:02:53 (Monday)</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            3.2<br/>
+            <span class="timestamp">01/02/23 08:02:53</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            3.2<br/>
+            <span class="timestamp">01/02/23 08:02:53</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            3.2<br/>
+            <span class="timestamp">01/02/23 08:02:53</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Heat Index</td>
+          <td class="units">&#176;C</td>
+          <td class="data new_row">
+            17.7<br/>
+            <span class="timestamp">16:11:55</span><br/>
+            11.5<br/>
+            <span class="timestamp">02:14:53</span>
+          </td>
+          <td class="data new_row">
+            20.8<br/>
+            <span class="timestamp">15:42:01 (Thursday)</span><br/>
+            2.8<br/>
+            <span class="timestamp">10:21:36 (Sunday)</span>
+          </td>
+          <td class="data new_row">
+            20.8<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            2.8<br/>
+            <span class="timestamp">01/01/23 10:21:36</span>
+          </td>
+          <td class="data new_row">
+            20.8<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            2.8<br/>
+            <span class="timestamp">01/01/23 10:21:36</span>
+          </td>
+          <td class="data new_row">
+            20.8<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            2.8<br/>
+            <span class="timestamp">01/01/23 10:21:36</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Wind Chill</td>
+          <td class="units">&#176;C</td>
+          <td class="data new_row">
+            18.3<br/>
+            <span class="timestamp">07:32:19</span><br/>
+            12.3<br/>
+            <span class="timestamp">02:14:53</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">15:42:01 (Thursday)</span><br/>
+            -3.2<br/>
+            <span class="timestamp">03:47:07 (Monday)</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            -3.2<br/>
+            <span class="timestamp">01/02/23 03:47:07</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            -3.2<br/>
+            <span class="timestamp">01/02/23 03:47:07</span>
+          </td>
+          <td class="data new_row">
+            21.6<br/>
+            <span class="timestamp">01/05/23 15:42:01</span><br/>
+            -3.2<br/>
+            <span class="timestamp">01/02/23 03:47:07</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Dew Point</td>
+          <td class="units">&#176;C</td>
+          <td class="data new_row">
+            10.2<br/>
+            <span class="timestamp">19:09:36</span><br/>
+            4.1<br/>
+            <span class="timestamp">03:26:39</span>
+          </td>
+          <td class="data new_row">
+            11.2<br/>
+            <span class="timestamp">13:40:16 (Wednesday)</span><br/>
+            -2.2<br/>
+            <span class="timestamp">00:49:19 (Friday)</span>
+          </td>
+          <td class="data new_row">
+            11.2<br/>
+            <span class="timestamp">01/04/23 13:40:16</span><br/>
+            -2.2<br/>
+            <span class="timestamp">01/06/23 00:49:19</span>
+          </td>
+          <td class="data new_row">
+            11.2<br/>
+            <span class="timestamp">01/04/23 13:40:16</span><br/>
+            -2.2<br/>
+            <span class="timestamp">01/06/23 00:49:19</span>
+          </td>
+          <td class="data new_row">
+            11.2<br/>
+            <span class="timestamp">01/04/23 13:40:16</span><br/>
+            -2.2<br/>
+            <span class="timestamp">01/06/23 00:49:19</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Outside Humidity</td>
+          <td class="units">%</td>
+          <td class="data new_row">
+            76<br/>
+            <span class="timestamp">00:17:11</span><br/>
+            45<br/>
+            <span class="timestamp">03:21:49</span>
+          </td>
+          <td class="data new_row">
+            94<br/>
+            <span class="timestamp">12:38:34 (Monday)</span><br/>
+            29<br/>
+            <span class="timestamp">00:13:27 (Friday)</span>
+          </td>
+          <td class="data new_row">
+            94<br/>
+            <span class="timestamp">01/02/23 12:38:34</span><br/>
+            29<br/>
+            <span class="timestamp">01/06/23 00:13:27</span>
+          </td>
+          <td class="data new_row">
+            94<br/>
+            <span class="timestamp">01/02/23 12:38:34</span><br/>
+            29<br/>
+            <span class="timestamp">01/06/23 00:13:27</span>
+          </td>
+          <td class="data new_row">
+            94<br/>
+            <span class="timestamp">01/02/23 12:38:34</span><br/>
+            29<br/>
+            <span class="timestamp">01/06/23 00:13:27</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Barometer</td>
+          <td class="units"> mbar</td>
+          <td class="data new_row">
+            1015.9<br/>
+            <span class="timestamp">17:27:01</span><br/>
+            1012.9<br/>
+            <span class="timestamp">01:16:01</span>
+          </td>
+          <td class="data new_row">
+            1022.1<br/>
+            <span class="timestamp">10:55:00 (Sunday)</span><br/>
+            1011.0<br/>
+            <span class="timestamp">21:15:01 (Thursday)</span>
+          </td>
+          <td class="data new_row">
+            1022.1<br/>
+            <span class="timestamp">01/01/23 10:55:00</span><br/>
+            1011.0<br/>
+            <span class="timestamp">01/05/23 21:15:01</span>
+          </td>
+          <td class="data new_row">
+            1022.1<br/>
+            <span class="timestamp">01/01/23 10:55:00</span><br/>
+            1011.0<br/>
+            <span class="timestamp">01/05/23 21:15:01</span>
+          </td>
+          <td class="data new_row">
+            1022.1<br/>
+            <span class="timestamp">01/01/23 10:55:00</span><br/>
+            1011.0<br/>
+            <span class="timestamp">01/05/23 21:15:01</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Max Wind</td>
+          <td class="units">
+             km/h<br/>
+            &#176;
+          </td>
+          <td class="data new_row">
+            27<br/>
+            352<br/>
+            <span class="timestamp">01:03:09</span>
+          </td>
+          <td class="data new_row">
+            66<br/>
+            214<br/>
+            <span class="timestamp">00:42:09 (Monday)</span>
+          </td>
+          <td class="data new_row">
+            66<br/>
+            214<br/>
+            <span class="timestamp">01/02/23 00:42:09</span>
+          </td>
+          <td class="data new_row">
+            66<br/>
+            214<br/>
+            <span class="timestamp">01/02/23 00:42:09</span>
+          </td>
+          <td class="data new_row">
+            66<br/>
+            214<br/>
+            <span class="timestamp">01/02/23 00:42:09</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Average Wind</td>
+          <td class="units"> km/h</td>
+          <td class="data new_row">
+            6</td>
+          <td class="data new_row">
+            10</td>
+          <td class="data new_row">
+            10</td>
+          <td class="data new_row">
+            10</td>
+          <td class="data new_row">
+            10</td>
+        </tr>
+        <tr>
+          <td class="label">RMS Wind</td>
+          <td class="units"> km/h</td>
+          <td class="data new_row">6</td>
+          <td class="data new_row">12</td>
+          <td class="data new_row">12</td>
+          <td class="data new_row">12</td>
+          <td class="data new_row">12</td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Vector Average<br/>
+            Vector Direction
+          </td>
+          <td class="units">
+             km/h<br/>
+            &#176;
+          </td>
+          <td class="data new_row">
+            5<br/>
+            31
+          </td>
+          <td class="data new_row">
+            1<br/>
+            54
+          </td>
+          <td class="data new_row">
+            1<br/>
+            54
+          </td>
+          <td class="data new_row">
+            1<br/>
+            54
+          </td>
+          <td class="data new_row">
+            1<br/>
+            54
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Rain</td>
+          <td class="units"> cm</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.05</td>
+          <td class="data new_row">0.05</td>
+          <td class="data new_row">0.05</td>
+          <td class="data new_row">0.05</td>
+        </tr>
+        <tr>
+          <td class="label">Rain Rate</td>
+          <td class="units"> cm/h</td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">00:17:11</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">00:00:03 (Sunday)</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">01/01/23 00:00:03</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">01/01/23 00:00:03</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">01/01/23 00:00:03</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Evapotranspiration</td>
+          <td class="units"> cm</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+        </tr>
+        <tr>
+          <td class="label">Inside Temperature</td>
+          <td class="units">&#176;C</td>
+          <td class="data new_row">
+            25.7<br/>
+            <span class="timestamp">00:18:01</span><br/>
+            23.4<br/>
+            <span class="timestamp">06:32:01</span>
+          </td>
+          <td class="data new_row">
+            27.6<br/>
+            <span class="timestamp">14:15:00 (Friday)</span><br/>
+            16.8<br/>
+            <span class="timestamp">04:26:57 (Monday)</span>
+          </td>
+          <td class="data new_row">
+            27.6<br/>
+            <span class="timestamp">01/06/23 14:15:00</span><br/>
+            16.8<br/>
+            <span class="timestamp">01/02/23 04:26:57</span>
+          </td>
+          <td class="data new_row">
+            27.6<br/>
+            <span class="timestamp">01/06/23 14:15:00</span><br/>
+            16.8<br/>
+            <span class="timestamp">01/02/23 04:26:57</span>
+          </td>
+          <td class="data new_row">
+            27.6<br/>
+            <span class="timestamp">01/06/23 14:15:00</span><br/>
+            16.8<br/>
+            <span class="timestamp">01/02/23 04:26:57</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Inside Humidity</td>
+          <td class="units">%</td>
+          <td class="data new_row">
+            44<br/>
+            <span class="timestamp">19:36:02</span><br/>
+            39<br/>
+            <span class="timestamp">01:07:01</span>
+          </td>
+          <td class="data new_row">
+            57<br/>
+            <span class="timestamp">15:08:00 (Wednesday)</span><br/>
+            32<br/>
+            <span class="timestamp">01:58:01 (Friday)</span>
+          </td>
+          <td class="data new_row">
+            57<br/>
+            <span class="timestamp">01/04/23 15:08:00</span><br/>
+            32<br/>
+            <span class="timestamp">01/06/23 01:58:01</span>
+          </td>
+          <td class="data new_row">
+            57<br/>
+            <span class="timestamp">01/04/23 15:08:00</span><br/>
+            32<br/>
+            <span class="timestamp">01/06/23 01:58:01</span>
+          </td>
+          <td class="data new_row">
+            57<br/>
+            <span class="timestamp">01/04/23 15:08:00</span><br/>
+            32<br/>
+            <span class="timestamp">01/06/23 01:58:01</span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+      </div>
+
+
+<div id='identifier_widget' class="widget">
+  <div class="widget_title">
+  </div>
+  <div class="widget_contents">
+  <table>
+    <tr>
+      <td class="label">Latitude</td>
+      <td class="data">00&deg; 00.00' N</td>
+    </tr>
+    <tr>
+      <td class="label">Longitude</td>
+      <td class="data">000&deg; 00.00' E</td>
+    </tr>
+    <tr>
+      <td class="label">Altitude</td>
+      <td class="data">800 meters</td>
+    </tr>
+    <tr>
+      <td class="label">WeeWX</td>
+      <td class="data">4.10.2</td>
+    </tr>
+  </table>
+  </div>
+
+</div>
+    </div>
+
+  </body>
+</html>

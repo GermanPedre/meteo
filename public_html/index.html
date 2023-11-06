@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>UNRN Weather Service</title>
+  <link rel="stylesheet" type="text/css" href="weewx.css" />
+  <link rel="icon" type="image/png" href="https://www.unrn.edu.ar/images/favicon/favicon-196x196.png" />
+  <script type="text/javascript">
+    function openURL(urlname) {
+      window.location = urlname;
+    }
+    function openNoaaFile(date) {
+      var url = "NOAA/NOAA-";
+      url = url + date;
+      url = url + ".txt";
+      window.location = url;
+    }
+  </script>
+</head>
+
+<body>
+
+  <div id="stats_group">
+
+      <table>
+        <tbody>
+          <tr>
+            <td class="stats_data">Bariloche</td>
+          </tr>
+          <tr>
+            <td class="stats_data">08/04/23 19:45:00</td>
+          </tr>
+          <tr>
+            <td class="stats_data">16.2&#176;C / 8.8&#176;C</td>
+          </tr>
+          <tr>
+            <td class="stats_data">62%</td>
+          </tr>
+          <tr>
+            <td class="stats_data">1015.7 mbar</td>
+          </tr>
+          <tr>
+            <td class="stats_data">7 km/h from 1</td>
+          </tr>
+          <tr>
+            <td class="stats_data">0.00 cm</td>
+          </tr>
+          <tr>
+            <td class="stats_data"> N/A</td>
+          </tr>
+          <tr>
+            <td class="stats_data"> N/A</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <p>&nbsp;</p>
+
+
+    <p>&nbsp;</p>
+
+
+  </div> <!--End class "stats_group" -->
+
+</body>
+
+</html>

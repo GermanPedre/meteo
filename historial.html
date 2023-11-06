@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="$lang">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Meteo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://www.unrn.edu.ar/images/favicon/favicon-196x196.png" />
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/Meteonew.png" /> </a>
+    </div>
+    <div id="logo_uni">
+      <a href="https://www.unrn.edu.ar/home" target="_blank" rel="noopener noreferrer"><img src="images/UNRN.png" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li> <!-- Dirige al home, deja de tener clase Active -->
+        <li><a href="web.html">WEB</a></li>
+        <li><a href="proyecto.html">PROYECTO</a></li>
+        <li><a href="historial.html" class="active">HISTORIAL</a></li>
+        <!-- Redirige a Nosotros, clase Active para que deje en blanco el botón -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="Estacion1">
+      <div class="titulo_historiales">
+        <h1>Temperaturas</h1>
+      </div>
+      <div class="historiales"><img src="images/historial_temperaturas.png"></div>
+      <div class="titulo_historiales">
+        <h1>Vientos</h1>
+      </div>
+      <div class="historiales"><img src="images/historial_vientos.png"></div>
+      <div class="titulo_historiales">
+        <h1>Presiones</h1>
+      </div>
+      <div class="historiales"><img src="images/historial_presiones.png"></div>
+    </div>
+  </main>
+  <footer class="footer_proyecto"><a href="index.html"><img src="images/favicon-196x196.png" alt="iconfooter"
+        id="iconfooter"></a>
+    <h3 id="footer__nosotros">METEO es un proyecto llevado a cabo por estudiantes y docentes de Ingeniería en
+      Telecomunicaciones de la Universidad Nacional de Rio Negro</h3>
+  </footer>
+</body>
+
+</html>

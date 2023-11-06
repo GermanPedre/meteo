@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="$lang">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecta - Meteo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://www.unrn.edu.ar/images/favicon/favicon-196x196.png" />
+</head>
+
+<body>
+  <header id="header">
+    
+    <div id="logo">
+      <a href="index.html"><img src="images/Meteonew.png" /> </a>
+    </div>
+
+    <div id="logo_uni">
+      <a href="https://www.unrn.edu.ar/home" target="_blank" rel="noopener noreferrer"><img src="images/UNRN.png" />
+      </a>
+    </div>
+    <!-- <img src="./images/fondo_header.png" alt=""> -->
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li> <!-- Dirige al home, deja de tener clase Active -->
+        <li><a href="web.html">WEB</a></li>
+        <li><a href="proyecto.html" class="active">PROYECTO</a></li>
+        <li><a href="historial.html">HISTORIAL</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="Estacion1"> <!-- Aprovecho estilos creados para el index así mantengo apariencia -->
+      <div class="stats"> <!-- Aprovecho estilos creados para el index así mantengo apariencia -->
+        <div>
+          <div class="about_box"> <!-- Creo la clase about_box para editar propieades en la hoja de estilos -->
+            <p>Administración y Representación de Datos Meteorológicos es un proyecto presentado para la materia "Proyecto Social" en el cual varios estudiantes de los últimos años de las carreras de Ingenieria en Telecomunicaciones e Ingeniería Electrónica realizaron tareas orientadas a la adquisición y representación de datos meteorológicos en una página web hecha desde cero.<br></p>
+            <p>Fue un desafío para todos ya que tanto los estudiantes como el profesor afrontaron tareas donde no había experiencia previa, por lo que se estudiaron temas desde cero, de forma casi autodidacta.<br></p>
+            <!-- <br> es la etiqueta abierta para poner un salto de linea-->
+            <p>Las distintas ramas que se abrieron dentro del proyecto son:</p>
+            <ul> <!-- Unordenated List para que no ponga viñetas con numeros -->
+              <li><b>Desarrollo de la página web Meteo:</b><br>
+                <i>La creación de la página web significó sortear varias complicaciones respecto a cómo hacer funcionar la página, en cuanto a lo que se refiere a obtener los datos de las estaciones meteorológicas, y por otro lado repecto a aquellas cuestiones más relacionadas a la apariencia de la página y la experiencia del usuario. El primer asunto fue decidir si haríamos la página en HTML desde cero, PHP, o si usar alguna herramienta preexistente que nos permita hacer una página sin tener conocimientos de desarrollo web. Lo que definimos fue hacer todo en HTML y dandole una apareciencia más amigable usando una hoja de estilos CSS. También fue muy discutido cómo hacer el dashboard, ya que necesitamos representar la información de la forma más cómoda posible pensando en la forma en la cual los usuarios utilizarían la página, por lo que optamos por hacer un diseño que se adapte fácilmente a dispositivos móviles. Es por esto que en la hoja de estilos agregamos 'media queries' así la página se adapta correctamente a pantallas de teléfonos. Yendo más concretmente al dashboard como tal, pensamos en utilizar páginas como Grafana para crear un diseño que cumpla con lo que habiamos pensado, pero por una cuestión de facilidad y ligereza usamos un 'iframe' creado en el index y mostramos la información ahí. En lo que refiere a bajar la información al cuadro pensamos varias formas de obtener la información, como Weewx, HTTP Request, Json o alguna forma de bajarla de Weatherunderground. También hicimos el diseño del logotipo, partiendo primero de usar inteligencias artificiales para tener alguna idea, y luego directamente pasamos a Photoshop a hacerlo manualmente.
+                </i></li>
+              <li><b>Armado de sensores</b><br>
+                <i>Se planteó armar un circuito para transmitir información proveniente de un sensor de temperatura ubicado en el Lago Nahuel Huapi utilizando una red de equipos LoRa mediante el protocolo LoRa. El equipo de recepción, envía los datos a un broker mediante MQTT. Los desafíos afrontados fueron blindar el equipo de transmisión frente al agua, ya que aunque el sensor puede mojarse, el circuito donde está conectado el LoRa debe mantenerse a salvo. Por otro lado queda el problema a futuro de lograr una buena disipación de teperatura ya que el LoRa puede generar inconvenientes funcionando a altas temperaturas, lo que podría ser un problema en el verano. En cuanto a la programación de la transmisión de datos, fue un gran desafío lograr hacer un código que funcione correctamente para subir el mensaje por MQTT.</i></li>
+              <li><b>Puesta a punto del servidor:</b><br>
+                <i>Se configuró el servidor ubicado en la universidad desde cero. Se hicieron las conexiones necesarias de los aparatos disponibles y luego se instalaron los programas básicos para realizar las primeras pruebas.</i></li>
+              <li><b>Configuración de equipos LoRa:</b><br>
+                <i>Se configuraron unos equipos LoRa, los cuales debían conectarse al LoRa Gateway para transmitir la información de las estaciones, por lo que fue necesario aprender a configurar estos equipos desde cero, lo que requirió estudiar los equipos y protocolos tanto a nivel hardware como software. </i></li>
+              <li><b>Instalación de estaciones:</b><br>
+                <i>El director del proyecto se encargó de la instalación de dos nuevas estaciones para que los estudiantes puedan mostrar la información obtenida en la página, con las complicaciones que el proceso conlleva.</i></li>
+              <div id="quitar_sangria">
+                <p>Los integrantes del proyecto fueron:</p>
+                <ul>
+                  <li><b>Pedernera, Nahuel - Estudiante - </b><i>Servidor, Pagina Web</i></li>
+                  <li><b>Medrano, Juan - Estudiante - </b><i>Configuración de equipos LoRa</i></li>
+                  <li><b>Pedre, Germán Pablo - Estudiante - </b><i>Página Web</i></li>
+                  <li><b>Muñoz, Gustavo - Estudiante - </b><i>Armado de sensores</i></li>
+                  <li><b>Pablos, Daniel - Estudiante - </b><i>Configuración de equipos LoRa</i></li>
+                  <li><b>Garcés, Gabriel - Estudiante - </b><i>Armado de sensores</i></li>
+                  <li><b>Bayona, Edisson - Estudiante - </b><i>Servidor</i></li>
+                  <li><b>Jorquera, Matias - Estudiante - </b><i>Configuración de equipos LoRa</i></li>
+                  <li><b>Brucelaria, Leonardo - Estudiante - </b><i>Armado de sensores</i></li>
+                  <li><b>Veizaga, Alí - Estudiante - </b><i>Armado de sensores</i></li>
+                  <li><b>Guozden, Tomás - Profesor - </b><i>Director</i></li>
+                </ul>
+                </div>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer_proyecto"> <a href="index.html"><img src="images/favicon-196x196.png" alt="iconfooter" id="iconfooter"></a>
+    <h3 id="footer__h3">METEO es un proyecto llevado a cabo por estudiantes y docentes de Ingeniería en
+      Telecomunicaciones de la Universidad Nacional de Rio Negro</h3>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/* CSS for Meteo_UNRN skin */
+
+ 
+/* Body style */
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}	
+
+
+/* Stats table positioning and style */
+ 
+#stats_group {
+    position: absolute;
+    display: block;
+    /*top: 250%;
+    left: 15%;*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.35);
+    text-align: center;
+    line-height: 23px;
+}
+
+.stats table {
+    border: none;
+    width: 100%;
+}
+.stats td {
+    border: none;
+    padding: 5px;
+}
+
+
+
+.stats_label {
+    color: #F2F2F2;
+}
+
+.stats_data {
+    color: #ff9700;
+}
+
+/*************** Global Styles ***************/
+
+h2, h3, h4, h5, h6 {
+    color: #3d6c87;
+}

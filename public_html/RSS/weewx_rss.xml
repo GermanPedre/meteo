@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rss version="2.0" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+   <channel>
+      <title>Bariloche, Weather Conditions</title>
+      <link></link>
+      <description>Current conditions, and daily, monthly, and yearly summaries</description>
+      <language>"en"</language>
+      <pubDate>Sat, 07 Jan 2023 19:45:00 -03</pubDate>
+
+      <lastBuildDate>Sat, 07 Jan 2023 19:45:00 -03</lastBuildDate>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+      <generator>weewx 4.10.2</generator>
+      <ttl>5.0 minutes</ttl>
+      
+      <item>
+         <title>Weather Conditions at 01/07/23 19:45:00</title>
+         <link></link>
+         <description>
+           Outside Temperature: 16.2&#176;C; 
+           Barometer: 1015.7 mbar; 
+           Wind: 7 km/h from 135&#176;; 
+           Rain Rate: 0.00 cm/h; 
+           Inside Temperature: 25.3&#176;C
+         </description>
+         <pubDate>Sat, 07 Jan 2023 19:45:00 -03</pubDate>
+	     <geo:lat>0.0</geo:lat>
+    	 <geo:long>0.0</geo:long>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Time: 01/07/23 19:45:00<br/>
+             Outside Temperature: 16.2&#176;C<br/>
+             Inside Temperature:  25.3&#176;C<br/>
+             Wind Chill: 16.2&#176;C<br/>
+             Heat Index: 15.5&#176;C<br/>
+             Dew Point: 8.8&#176;C<br/>
+             Humidity: 62%<br/>
+             Barometer: 1015.7 mbar<br/>
+             Wind: 7 km/h from 135&#176;<br/>
+             Rain Rate: 0.00 cm/h<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Daily Weather Summary as of 01/07/23 19:45:00</title>
+         <link></link>
+         <description>
+	        Min outside temperature: 12.3&#176;C at 02:14:53;
+         	Max outside temperature: 18.3&#176;C at 07:32:19;
+	        Min inside temperature:  23.4&#176;C at 06:32:01;
+	        Max inside temperature:  25.7&#176;C at 00:18:01;
+	        Min barometer:           1012.9 mbar at 01:16:01;
+	        Max barometer:           1015.9 mbar at 17:27:01;
+            Max wind :               27 km/h from 352&#176; at 01:03:09;
+            Rain today:              0.00 cm
+         </description>
+         <pubDate>Sat, 07 Jan 2023 19:45:00 -03</pubDate>
+	     <geo:lat>0.0</geo:lat>
+    	 <geo:long>0.0</geo:long>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Day: 07 Jan 2023<br/>
+	         Min outside temperature: 12.3&#176;C at 02:14:53<br/>
+	         Max outside temperature: 18.3&#176;C at 07:32:19<br/>
+	         Min inside temperature:  23.4&#176;C at 06:32:01<br/>
+	         Max inside temperature:  25.7&#176;C at 00:18:01<br/>
+	         Min barometer:           1012.9 mbar at 01:16:01<br/>
+	         Max barometer:           1015.9 mbar at 17:27:01<br/>
+             Max wind :               27 km/h from 352&#176; at 01:03:09<br/>
+             Rain today:              0.00 cm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Monthly Weather Summary as of 01/07/23 19:45:00</title>
+         <link></link>
+         <description>
+	        Min outside temperature: 3.2&#176;C at 01/02/23 08:02:53;
+         	Max outside temperature: 21.6&#176;C at 01/05/23 15:42:01;
+	        Min inside temperature:  16.8&#176;C at 01/02/23 04:26:57;
+	        Max inside temperature:  27.6&#176;C at 01/06/23 14:15:00;
+	        Min barometer:           1011.0 mbar at 01/05/23 21:15:01;
+	        Max barometer:           1022.1 mbar at 01/01/23 10:55:00;
+            Max wind :               66 km/h from 214&#176; at 01/02/23 00:42:09;
+            Rain total for month:    0.05 cm
+         </description>
+         <pubDate>Sat, 07 Jan 2023 19:45:00 -03</pubDate>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Month: January 2023<br/>
+	         Max outside temperature: 21.6&#176;C at 01/05/23 15:42:01<br/>
+	         Min outside temperature: 3.2&#176;C at 01/02/23 08:02:53<br/>
+	         Max inside temperature:  27.6&#176;C at 01/06/23 14:15:00<br/>
+	         Min inside temperature:  16.8&#176;C at 01/02/23 04:26:57<br/>
+	         Min barometer:           1011.0 mbar at 01/05/23 21:15:01<br/>
+	         Max barometer:           1022.1 mbar at 01/01/23 10:55:00<br/>
+             Max wind :               66 km/h from 214&#176; at 01/02/23 00:42:09<br/>
+             Rain total for month:    0.05 cm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Yearly Weather Summary as of 01/07/23 19:45:00</title>
+         <link></link>
+         <description>
+	        Min outside temperature: 3.2&#176;C at 01/02/23 08:02:53;
+         	Max outside temperature: 21.6&#176;C at 01/05/23 15:42:01;
+	        Min inside temperature:  16.8&#176;C at 01/02/23 04:26:57;
+	        Max inside temperature:  27.6&#176;C at 01/06/23 14:15:00;
+	        Min barometer:           1011.0 mbar at 01/05/23 21:15:01;
+	        Max barometer:           1022.1 mbar at 01/01/23 10:55:00;
+            Max wind :               66 km/h from 214&#176; at 01/02/23 00:42:09;
+            Rain total for year:     0.05 cm
+         </description>
+         <pubDate>Sat, 07 Jan 2023 19:45:00 -03</pubDate>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Year: 2023<br/>
+	         Max outside temperature: 21.6&#176;C at 01/05/23 15:42:01<br/>
+	         Min outside temperature: 3.2&#176;C at 01/02/23 08:02:53<br/>
+	         Max inside temperature:  27.6&#176;C at 01/06/23 14:15:00<br/>
+	         Min inside temperature:  16.8&#176;C at 01/02/23 04:26:57<br/>
+	         Min barometer:           1011.0 mbar at 01/05/23 21:15:01<br/>
+	         Max barometer:           1022.1 mbar at 01/01/23 10:55:00<br/>
+             Max wind :               66 km/h from 214&#176; at 01/02/23 00:42:09<br/>
+             Rain total for year:     0.05 cm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+   </channel>
+</rss>
